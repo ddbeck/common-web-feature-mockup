@@ -1,0 +1,15 @@
+# Example goal: show versioning and combining synthetic features
+identifier: consensus-web
+version: 2023
+shortName: Consensus Web 2023
+longName: Consensus Web Platform Features circa 2023
+description: Features widely-supported by popular web browser implementations as of 1 January 2023
+expiration: never
+constituentFeatures:
+  - source: "ddbeck/common-web-features-mockup"
+    query: "cascade-layers@2023"  # On 1 January 2023, we take a snapshot of
+                                  # the widely-supported features in
+                                  # cascade-layers to generate this 🚀
+  - source: "ddbeck/common-web-features-mockup"
+    query: "consensus-web@2022"   # Over time, we could represent each [interval] in
+                                  # the web's evolution.

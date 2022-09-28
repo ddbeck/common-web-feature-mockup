@@ -1,0 +1,21 @@
+# Example goal: reflect something already in Caniuse
+identifier: cascade-layers
+shortName: Cascade Layers
+longName: CSS Cascade Layers
+description: "@layer and associated APIs"
+expiration: never
+constituentFeatures:
+  - source: "bcd"
+    query: "css.at-rules.layer"
+  - source: "bcd"
+    query: "css.at-rules.import.layer"  # missing data!
+  - source: "bcd"
+    query: "api.CSSImportRule.layerName"  # missing data!
+  - source: "bcd"
+    query: "api.CSSLayerBlockRule"
+  - source: "bcd"
+    query: "api.CSSLayerBlockRule.name"
+  - source: "bcd"
+    query: "api.CSSLayerStatementRule"
+  - source: "bcd"
+    query: "api.CSSLayerStatementRule.nameList"

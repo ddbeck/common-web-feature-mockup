@@ -1,0 +1,31 @@
+# Example goal: show a feature proposal not yet supported
+identifier: temporal
+shortName: Temporal
+longName: Temporal (proposed ECMAScript API)
+description: A proposed date and time API for JavaScript
+expiration: 2023-09-27  # Since this is a proposal, we could have a guideline
+                        # (and automation) to retire, archive, or freeze the
+                        # data associated with this feature on the expiration
+                        # date, if it's still unsupported.
+constituentFeatures:
+  - source: "bcd"
+    query: "javascript.builtins.Temporal"  # This feature doesn't exist!
+    ignoreMissing: false  # But we it could be evidence of being unsuported.
+  - source: "bcd"
+    query: "javascript.builtins.Temporal.Now"
+    ignoreMissing: false
+  - source: "bcd"
+    query: "javascript.builtins.Temporal.Now.instant"  # oh no there's a bunch!
+                                                       # I'll be here all day.
+    ignoreMissing: false
+  - source: "bcd"
+    query: "javascript.builtins.Temporal.Instant"
+    ignoreMissing: false
+    # We might be tempted to do something like this, to avoid writing out all
+    # of the descendant features:
+    includeDescendants: true
+    # I'm suspicious of this, however, since it may lead to us to breaking the
+    # versioning contract (you don't want Feature 2020 to pick up new features
+    # for all time—it should be fixed). Instead, we might want to consider
+    # using tooling (e.g., a dependabot-style upgrade mechanism) to make such
+    # rollups automatic, for the comprehensive features where that's desirable.
