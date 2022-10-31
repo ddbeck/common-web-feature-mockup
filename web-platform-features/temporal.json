@@ -1,0 +1,30 @@
+{
+  "identifier": "temporal",
+  "shortName": "Temporal",
+  "longName": "Temporal (proposed ECMAScript API)",
+  "description": "A proposed date and time API for JavaScript",
+  "expiration": "2023-09-27T00:00:00Z",
+  "constituentFeatures": [
+    {
+      "source": "bcd",
+      "query": "javascript.builtins.Temporal",
+      "ignoreMissing": false
+    },
+    {
+      "source": "bcd",
+      "query": "javascript.builtins.Temporal.Now",
+      "ignoreMissing": false
+    },
+    {
+      "source": "bcd",
+      "query": "javascript.builtins.Temporal.Now.instant",
+      "ignoreMissing": false
+    },
+    {
+      "source": "bcd",
+      "query": "javascript.builtins.Temporal.Instant",
+      "ignoreMissing": false,
+      "includeDescendants": true
+    }
+  ]
+}

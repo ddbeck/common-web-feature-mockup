@@ -1,0 +1,17 @@
+{
+  "identifier": "webrtc",
+  "shortName": "WebRTC",
+  "longName": "WebRTC (all features)",
+  "description": "Web Real-Time Communication APIs and protocol support",
+  "expiration": "never",
+  "constituentFeatures": [
+    {
+      "source": "bcd",
+      "query": "api.Navigator.someNewMediaThingThatDidntShipUntil2022"
+    },
+    {
+      "source": "ddbeck/common-web-feature-mockup",
+      "query": "webrtc@2022"
+    }
+  ]
+}

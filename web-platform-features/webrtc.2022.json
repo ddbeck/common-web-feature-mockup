@@ -1,0 +1,22 @@
+{
+  "identifier": "webrtc",
+  "version": 2022,
+  "shortName": "WebRTC",
+  "longName": "WebRTC 2022",
+  "description": "Web Real-Time Communication APIs and protocols widely-supported by popular web browser implementations as of 1 January 2022",
+  "expiration": "never",
+  "constituentFeatures": [
+    {
+      "source": "bcd",
+      "query": "api.Navigator.mediaCapabilities"
+    },
+    {
+      "source": "bcd",
+      "query": "api.RTCPeerConnection"
+    },
+    {
+      "source": "bcd",
+      "query": "api.RTCPeerConnection.RTCPeerConnection"
+    }
+  ]
+}
