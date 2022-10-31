@@ -1,0 +1,38 @@
+{
+  "$id": "https://example.com/TBC",
+  "title": "Common Web Platform Feature Group",
+  "description": "A feature or group of features of the web platform and related technologies",
+  "type": "object",
+  "properties": {
+    "identifier": {
+      "type": "string"
+    },
+    "shortName": {
+      "type": "string"
+    },
+    "longName": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "constituentFeatures": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "./query.schema.json"
+      }
+    },
+    "editorialMetadata": {
+      "$ref": "./editorialMetadata.schema.json"
+    }
+  },
+  "required": [
+    "identifier",
+    "shortName",
+    "longName",
+    "description",
+    "constituentFeatures"
+  ],
+  "unevaluatedProperties": false
+}

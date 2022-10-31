@@ -1,0 +1,52 @@
+{
+  "title": "Editorial Metadata",
+  "description": "Metadata to support feature group workflows",
+  "type": "object",
+  "properties": {
+    "status": {
+      "enum": [
+        "proposal",
+        "active",
+        "generated",
+        "frozen",
+        "pending-deletion"
+      ]
+    },
+    "managers": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/manager" }
+    },
+    "created": { "$ref": "#/$defs/date" },
+    "lastReviewed": { "$ref": "#/$defs/date" },
+    "lastModified": { "$ref": "#/$defs/date" },
+    "expires": { "$ref": "#/$defs/date" }
+  },
+  "unevaluatedProperties": false,
+  "$defs": {
+    "manager": {
+      "oneOf": [
+        {
+          "title": "GitHub user name",
+          "type": "string",
+          "pattern": "@[\\w-]+",
+          "examples": [
+            "@ddbeck"
+          ]
+        },
+        {
+          "title": "Automation",
+          "type": "string",
+          "pattern": "\\[[\\w-]+\\]",
+          "examples": [
+            "[some-bot]"
+          ]
+        }
+      ]
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

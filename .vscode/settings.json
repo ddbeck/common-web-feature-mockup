@@ -1,0 +1,10 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "/web-platform-features/*.json"
+      ],
+      "url": "./schema/base.schema.json"
+    }
+  ],
+}
