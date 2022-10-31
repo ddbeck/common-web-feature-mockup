@@ -1,5 +1,4 @@
 {
-  "$id": "https://example.com/TBC",
   "title": "Common Web Platform Feature Group",
   "description": "A feature or group of features of the web platform and related technologies",
   "type": "object",
@@ -20,11 +19,11 @@
       "type": "array",
       "minItems": 1,
       "items": {
-        "$ref": "./query.schema.json"
+        "$ref": "#/$defs/query"
       }
     },
     "editorialMetadata": {
-      "$ref": "./editorialMetadata.schema.json"
+      "$ref": "#/$defs/editorialMetadata"
     }
   },
   "required": [
@@ -34,5 +33,83 @@
     "description",
     "constituentFeatures"
   ],
-  "unevaluatedProperties": false
+  "unevaluatedProperties": false,
+  "$defs": {
+    "query": {
+      "title": "Feature support data query",
+      "description": "A query for referencing up feature support data",
+      "type": "object",
+      "properties": {
+        "source": {
+          "oneOf": [
+            {
+              "title": "GitHub repository",
+              "type": "string",
+              "pattern": "([\\w-]+)\\/([\\w-]+)(#.*)?",
+              "examples": ["ddbeck/common-web-feature-mockup"]
+            },
+            {
+              "title": "Shorthands",
+              "description": "A shorthand for known data sources",
+              "enum": ["bcd"]
+            }
+          ]
+        },
+        "query": {
+          "type": "string"
+        }
+      },
+      "unevaluatedProperties": false
+    },
+    "editorialMetadata": {
+      "title": "Editorial Metadata",
+      "description": "Metadata to support feature group workflows",
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "proposal",
+            "active",
+            "generated",
+            "frozen",
+            "pending-deletion"
+          ]
+        },
+        "managers": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/manager" }
+        },
+        "created": { "$ref": "#/$defs/date" },
+        "lastReviewed": { "$ref": "#/$defs/date" },
+        "lastModified": { "$ref": "#/$defs/date" },
+        "expires": { "$ref": "#/$defs/date" }
+      },
+      "unevaluatedProperties": false
+    },
+    "manager": {
+      "oneOf": [
+        {
+          "title": "GitHub user name",
+          "type": "string",
+          "pattern": "@[\\w-]+",
+          "examples": [
+            "@ddbeck"
+          ]
+        },
+        {
+          "title": "Automation",
+          "type": "string",
+          "pattern": "\\[[\\w-]+\\]",
+          "examples": [
+            "[some-bot]"
+          ]
+        }
+      ]
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    }
+  }
 }
