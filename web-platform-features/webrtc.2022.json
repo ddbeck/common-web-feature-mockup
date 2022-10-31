@@ -4,7 +4,6 @@
   "shortName": "WebRTC",
   "longName": "WebRTC 2022",
   "description": "Web Real-Time Communication APIs and protocols widely-supported by popular web browser implementations as of 1 January 2022",
-  "expiration": "never",
   "constituentFeatures": [
     {
       "source": "bcd",

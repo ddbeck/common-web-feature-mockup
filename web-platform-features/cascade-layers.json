@@ -3,7 +3,6 @@
   "shortName": "Cascade Layers",
   "longName": "CSS Cascade Layers",
   "description": "@layer and associated APIs",
-  "expiration": "never",
   "constituentFeatures": [
     {
       "source": "bcd",

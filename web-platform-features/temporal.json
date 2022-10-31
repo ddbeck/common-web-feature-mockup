@@ -3,7 +3,9 @@
   "shortName": "Temporal",
   "longName": "Temporal (proposed ECMAScript API)",
   "description": "A proposed date and time API for JavaScript",
-  "expiration": "2023-09-27T00:00:00Z",
+  "editorialMetadata": {
+    "expires": "2023-09-27"
+  },
   "constituentFeatures": [
     {
       "source": "bcd",
