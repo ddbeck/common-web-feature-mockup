@@ -1,4 +1,5 @@
 {
+  "identifier": "idle-detection",
   "shortName": "Idle Detection",
   "longName": "Idle Detection (all features)",
   "description": "Detect whether a user is actively interacting with a web application",

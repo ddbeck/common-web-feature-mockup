@@ -19,7 +19,8 @@ constituentFeatures:
   - source: "bcd"
     query: "api.IdleDetector.userState"
   - source: "bcd"
-    query: "http.Feature-Policy.idle-detection"  # This doesn't actually exist
-                                                 # but shows we might cross
-                                                 # domains (API and HTTP, in
-                                                 # this case).
+    query:
+      "http.Feature-Policy.idle-detection" # This doesn't actually exist
+      # but shows we might cross
+      # domains (API and HTTP, in
+      # this case).

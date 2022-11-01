@@ -4,7 +4,6 @@
   "shortName": "Consensus Web 2023",
   "longName": "Consensus Web Platform Features circa 2023",
   "description": "Features widely-supported by popular web browser implementations as of 1 January 2023",
-  "expiration": "never",
   "constituentFeatures": [
     {
       "source": "ddbeck/common-web-features-mockup",
