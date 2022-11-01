@@ -60,6 +60,9 @@
         },
         "query": {
           "type": "string"
+        },
+        "ignoreMissing": {
+          "type": "boolean"
         }
       },
       "unevaluatedProperties": false
