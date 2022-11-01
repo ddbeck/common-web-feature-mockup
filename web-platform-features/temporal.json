@@ -25,8 +25,7 @@
     {
       "source": "bcd",
       "query": "javascript.builtins.Temporal.Instant",
-      "ignoreMissing": false,
-      "includeDescendants": true
+      "ignoreMissing": false
     }
   ]
 }
