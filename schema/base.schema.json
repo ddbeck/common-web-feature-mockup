@@ -6,6 +6,9 @@
     "identifier": {
       "type": "string"
     },
+    "version": {
+      "type": "string"
+    },
     "shortName": {
       "type": "string"
     },
