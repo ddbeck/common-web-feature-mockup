@@ -1,0 +1,417 @@
+{
+  "identifier": "idle-detection",
+  "shortName": "Idle Detection",
+  "longName": "Idle Detection (all features)",
+  "description": "Detect whether a user is actively interacting with a web application",
+  "supportSummary": [
+    {
+      "boolean": false
+    },
+    {
+      "sinceDate": null
+    },
+    {
+      "sinceVersions": {
+        "chrome": "94"
+      }
+    }
+  ],
+  "constituentFeatures": [
+    {
+      "source": "bcd",
+      "query": "api.IdleDetector",
+      "supportSummary": [
+        {
+          "boolean": false
+        },
+        {
+          "sinceDate": null
+        },
+        {
+          "sinceVersions": {
+            "chrome": "94"
+          }
+        }
+      ],
+      "supportDetails": [
+        {
+          "browser": "chrome",
+          "supportSummary": [
+            {
+              "boolean": true
+            },
+            {
+              "sinceDate": "2021-09-21"
+            },
+            {
+              "sinceVersion": "94"
+            }
+          ],
+          "supportDetails": [
+            {
+              "version": "107",
+              "status": "yes"
+            },
+            {
+              "version": "106",
+              "status": "yes"
+            },
+            {
+              "version": "105",
+              "status": "yes"
+            },
+            {
+              "version": "104",
+              "status": "yes"
+            },
+            {
+              "version": "103",
+              "status": "yes"
+            },
+            {
+              "version": "102",
+              "status": "yes"
+            },
+            {
+              "version": "101",
+              "status": "yes"
+            },
+            {
+              "version": "100",
+              "status": "yes"
+            },
+            {
+              "version": "99",
+              "status": "yes"
+            },
+            {
+              "version": "98",
+              "status": "yes"
+            },
+            {
+              "version": "97",
+              "status": "yes"
+            },
+            {
+              "version": "96",
+              "status": "yes"
+            },
+            {
+              "version": "95",
+              "status": "yes"
+            },
+            {
+              "version": "94",
+              "status": "yes"
+            },
+            {
+              "version": "93",
+              "status": "yes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "bcd",
+      "query": "api.IdleDetector.IdleDetector",
+      "supportSummary": [
+        {
+          "boolean": false
+        },
+        {
+          "sinceDate": null
+        },
+        {
+          "sinceVersions": {
+            "chrome": "94"
+          }
+        }
+      ],
+      "supportDetails": [
+        {
+          "browser": "chrome",
+          "supportSummary": [
+            {
+              "boolean": true
+            },
+            {
+              "sinceDate": "2021-09-21"
+            },
+            {
+              "sinceVersion": "94"
+            }
+          ],
+          "supportDetails": [
+            {
+              "version": "107",
+              "status": "yes"
+            },
+            {
+              "version": "106",
+              "status": "yes"
+            },
+            {
+              "version": "105",
+              "status": "yes"
+            },
+            {
+              "version": "104",
+              "status": "yes"
+            },
+            {
+              "version": "103",
+              "status": "yes"
+            },
+            {
+              "version": "102",
+              "status": "yes"
+            },
+            {
+              "version": "101",
+              "status": "yes"
+            },
+            {
+              "version": "100",
+              "status": "yes"
+            },
+            {
+              "version": "99",
+              "status": "yes"
+            },
+            {
+              "version": "98",
+              "status": "yes"
+            },
+            {
+              "version": "97",
+              "status": "yes"
+            },
+            {
+              "version": "96",
+              "status": "yes"
+            },
+            {
+              "version": "95",
+              "status": "yes"
+            },
+            {
+              "version": "94",
+              "status": "yes"
+            },
+            {
+              "version": "93",
+              "status": "no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "bcd",
+      "query": "api.IdleDetector.change_event",
+      "supportSummary": [
+        {
+          "boolean": false
+        },
+        {
+          "sinceDate": null
+        },
+        {
+          "sinceVersions": {
+            "chrome": "94"
+          }
+        }
+      ],
+      "supportDetails": [
+        {
+          "browser": "chrome",
+          "supportSummary": [
+            {
+              "boolean": true
+            },
+            {
+              "sinceDate": "2021-09-21"
+            },
+            {
+              "sinceVersion": "94"
+            }
+          ],
+          "supportDetails": [
+            {
+              "version": "107",
+              "status": "yes"
+            },
+            {
+              "version": "106",
+              "status": "yes"
+            },
+            {
+              "version": "105",
+              "status": "yes"
+            },
+            {
+              "version": "104",
+              "status": "yes"
+            },
+            {
+              "version": "103",
+              "status": "yes"
+            },
+            {
+              "version": "102",
+              "status": "yes"
+            },
+            {
+              "version": "101",
+              "status": "yes"
+            },
+            {
+              "version": "100",
+              "status": "yes"
+            },
+            {
+              "version": "99",
+              "status": "yes"
+            },
+            {
+              "version": "98",
+              "status": "yes"
+            },
+            {
+              "version": "97",
+              "status": "yes"
+            },
+            {
+              "version": "96",
+              "status": "yes"
+            },
+            {
+              "version": "95",
+              "status": "yes"
+            },
+            {
+              "version": "94",
+              "status": "yes"
+            },
+            {
+              "version": "93",
+              "status": "no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "bcd",
+      "query": "api.IdleDetector.requestPermission",
+      "supportSummary": [
+        {
+          "boolean": false
+        },
+        {
+          "sinceDate": null
+        },
+        {
+          "sinceVersions": {
+            "chrome": "94"
+          }
+        }
+      ],
+      "supportDetails": [
+        {
+          "browser": "chrome",
+          "supportSummary": [
+            {
+              "boolean": true
+            },
+            {
+              "sinceDate": "2021-09-21"
+            },
+            {
+              "sinceVersion": "94"
+            }
+          ],
+          "supportDetails": [
+            {
+              "version": "107",
+              "status": "yes"
+            },
+            {
+              "version": "106",
+              "status": "yes"
+            },
+            {
+              "version": "105",
+              "status": "yes"
+            },
+            {
+              "version": "104",
+              "status": "yes"
+            },
+            {
+              "version": "103",
+              "status": "yes"
+            },
+            {
+              "version": "102",
+              "status": "yes"
+            },
+            {
+              "version": "101",
+              "status": "yes"
+            },
+            {
+              "version": "100",
+              "status": "yes"
+            },
+            {
+              "version": "99",
+              "status": "yes"
+            },
+            {
+              "version": "98",
+              "status": "yes"
+            },
+            {
+              "version": "97",
+              "status": "yes"
+            },
+            {
+              "version": "96",
+              "status": "yes"
+            },
+            {
+              "version": "95",
+              "status": "yes"
+            },
+            {
+              "version": "94",
+              "status": "yes"
+            },
+            {
+              "version": "93",
+              "status": "no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "bcd",
+      "query": "api.IdleDetector.screenState"
+    },
+    {
+      "source": "bcd",
+      "query": "api.IdleDetector.start"
+    },
+    {
+      "source": "bcd",
+      "query": "api.IdleDetector.userState"
+    },
+    {
+      "source": "bcd",
+      "query": "http.Feature-Policy.idle-detection"
+    }
+  ]
+}
