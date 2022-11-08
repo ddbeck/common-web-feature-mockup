@@ -1,0 +1,16 @@
+{
+  "identifier": "array-grouping",
+  "shortName": "Array grouping",
+  "longName": "JavaScript Array grouping methods",
+  "description": "JavaScript Array methods to group array items",
+  "constituentFeatures": [
+    {
+      "source": "bcd",
+      "query": "javascript.builtins.Array.group"
+    },
+    {
+      "source": "bcd",
+      "query": "javascript.builtins.Array.groupToMap"
+    }
+  ]
+}

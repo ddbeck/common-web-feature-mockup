@@ -1,0 +1,20 @@
+{
+  "identifier": "array",
+  "shortName": "Array",
+  "longName": "JavaScript Array object",
+  "description": "An object that represents an ordered collection.",
+  "constituentFeatures": [
+    {
+      "source": "ddbeck/common-web-feature-mockup",
+      "query": "array@2022"
+    },
+    {
+      "source": "ddbeck/common-web-feature-mockup",
+      "query": "array-relative-indexing"
+    },
+    {
+      "source": "ddbeck/common-web-feature-mockup",
+      "query": "array-grouping"
+    }
+  ]
+}

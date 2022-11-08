@@ -1,0 +1,12 @@
+{
+  "identifier": "array-relative-indexing",
+  "shortName": "Array <code>at()</code> method",
+  "longName": "JavaScript Array relative indexing method",
+  "description": "A method for accessing array items by a negative index",
+  "constituentFeatures": [
+    {
+      "source": "bcd",
+      "query": "javascript.bultins.Array.at"
+    }
+  ]
+}

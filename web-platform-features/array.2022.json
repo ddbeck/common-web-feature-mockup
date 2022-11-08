@@ -1,0 +1,13 @@
+{
+  "identifier": "array",
+  "version": "2022",
+  "shortName": "Array",
+  "longName": "JavaScript Array object",
+  "description": "An object that represents an ordered collection (as it was widely-supported as of 1 January 2022).",
+  "constituentFeatures": [
+    {
+      "source": "bcd",
+      "query": "javascript.builtins.Array"
+    }
+  ]
+}

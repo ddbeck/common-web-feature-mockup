@@ -1,0 +1,20 @@
+{
+  "source": "bcd",
+  "query": "javascript.builtins.Array.groupToMap",
+  "supportSummaries": [
+    {
+      "boolean": false
+    },
+    {
+      "supportedSinceDate": false
+    },
+    {
+      "supportedSinceVersion": {
+        "chrome": false,
+        "firefox": "preview",
+        "safari": false
+      }
+    }
+  ],
+  "supportDetails": []
+}

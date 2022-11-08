@@ -1,0 +1,20 @@
+{
+  "source": "bcd",
+  "query": "javascript.builtins.Array.group",
+  "supportSummaries": [
+    {
+      "boolean": true
+    },
+    {
+      "supportedSinceDate": "2022-03-15"
+    },
+    {
+      "supportedSinceVersion": {
+        "chrome": "92",
+        "firefox": "90",
+        "safari": "15.4"
+      }
+    }
+  ],
+  "supportDetails": []
+}

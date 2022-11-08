@@ -1,0 +1,20 @@
+{
+  "source": "ddbeck/common-web-feature-mockup",
+  "query": "array-relative-indexing",
+  "supportSummaries": [
+    {
+      "boolean": true
+    },
+    {
+      "supportedSinceDate": "2022-03-15"
+    },
+    {
+      "supportedSinceVersion": {
+        "chrome": "92",
+        "firefox": "90",
+        "safari": "15.4"
+      }
+    }
+  ],
+  "supportDetails": []
+}

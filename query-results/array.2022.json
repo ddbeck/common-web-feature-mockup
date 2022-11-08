@@ -1,0 +1,20 @@
+{
+  "source": "ddbeck/common-web-feature-mockup",
+  "query": "array@2022",
+  "supportSummaries": [
+    {
+      "boolean": true
+    },
+    {
+      "supportedSinceDate": "2008-12-11"
+    },
+    {
+      "supportedSinceVersion": {
+        "chrome": "1",
+        "firefox": "1",
+        "safari": "1"
+      }
+    }
+  ],
+  "supportDetails": []
+}
