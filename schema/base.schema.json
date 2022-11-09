@@ -28,6 +28,9 @@
     },
     "editorialMetadata": {
       "$ref": "#/$defs/editorialMetadata"
+    },
+    "$comment": {
+      "$ref": "#/$defs/comment"
     }
   },
   "required": [
@@ -39,6 +42,11 @@
   ],
   "unevaluatedProperties": false,
   "$defs": {
+    "comment": {
+      "title": "A comment",
+      "description": "A comment for group authors to describe some internal detail.",
+      "type": "string"
+    },
     "query": {
       "title": "Feature support data query",
       "description": "A query for referencing up feature support data",
@@ -64,6 +72,9 @@
         },
         "ignoreMissing": {
           "type": "boolean"
+        },
+        "$comment": {
+          "$ref": "#/$defs/comment"
         }
       },
       "unevaluatedProperties": false
@@ -90,7 +101,8 @@
         "created": { "$ref": "#/$defs/date" },
         "lastReviewed": { "$ref": "#/$defs/date" },
         "lastModified": { "$ref": "#/$defs/date" },
-        "expires": { "$ref": "#/$defs/date" }
+        "expires": { "$ref": "#/$defs/date" },
+        "$comment": { "$ref": "#/$defs/comment" }
       },
       "unevaluatedProperties": false
     },

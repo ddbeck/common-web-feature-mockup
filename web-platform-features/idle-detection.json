@@ -34,7 +34,8 @@
     },
     {
       "source": "bcd",
-      "query": "http.Feature-Policy.idle-detection"
+      "query": "http.Feature-Policy.idle-detection",
+      "$comment": "This doesn't actually exist but shows we might cross domains (API and HTTP, in this case)."
     }
   ]
 }

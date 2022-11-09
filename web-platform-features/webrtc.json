@@ -1,4 +1,5 @@
 {
+  "$comment": "The goal of this example is to show something gnarly and complicated.",
   "identifier": "webrtc",
   "shortName": "WebRTC",
   "longName": "WebRTC (all features)",
@@ -6,7 +7,8 @@
   "constituentFeatures": [
     {
       "source": "bcd",
-      "query": "api.Navigator.someNewMediaThingThatDidntShipUntil2022"
+      "query": "api.Navigator.someNewMediaThingThatDidntShipUntil2022",
+      "$comment": "I've run out of time to really pin true examples down; I've put in a fake feature to illustrate." 
     },
     {
       "source": "ddbeck/common-web-feature-mockup",

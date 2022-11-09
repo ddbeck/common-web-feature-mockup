@@ -1,4 +1,5 @@
 {
+  "$comment": "The goal of this example is to show something gnarly and complicated and versioned.",
   "identifier": "webrtc",
   "version": "2022",
   "shortName": "WebRTC",
@@ -15,7 +16,8 @@
     },
     {
       "source": "bcd",
-      "query": "api.RTCPeerConnection.RTCPeerConnection"
+      "query": "api.RTCPeerConnection.RTCPeerConnection",
+      "$comment": "etc., etc., etc. Potentially generatable from IDL and BCD, so we don't have to do this by hand?"
     }
   ]
 }

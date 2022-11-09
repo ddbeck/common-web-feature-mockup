@@ -6,8 +6,6 @@ longName: WebRTC 2022
 description: Web Real-Time Communication APIs and protocols widely-supported by popular web browser implementations as of 1 January 2022
 expiration: never
 constituentFeatures:
-  # I've run out of time to really pin true examples down; I've put in a
-  # fake feature to illustrate.
   - source: "bcd"
     query: "api.Navigator.mediaCapabilities"
   - source: "bcd"
