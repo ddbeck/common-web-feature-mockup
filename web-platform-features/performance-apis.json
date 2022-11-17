@@ -1,0 +1,104 @@
+{
+  "identifier": "performance-apis",
+  "shortName": "Performance APIs",
+  "longName": "Web Performance Measurement APIs",
+  "description": "The Performance API is a group of standards used to measure the performance of web applications.",
+  "constituentFeatures": [
+    {
+      "source": "bcd",
+      "query": "api.EventCounts"
+    },
+    {
+      "source": "bcd",
+      "query": "api.LargestContentfulPaint"
+    },
+    {
+      "source": "bcd",
+      "query": "api.LayoutShift"
+    },
+    {
+      "source": "bcd",
+      "query": "api.LayoutShiftAttribution"
+    },
+    {
+      "source": "bcd",
+      "query": "api.Performance"
+    },
+    {
+      "source": "bcd",
+      "query": "api.PerformanceEntry"
+    },
+    {
+      "source": "bcd",
+      "query": "api.PerformanceElementTiming"
+    },
+    {
+      "source": "bcd",
+      "query": "api.PerformanceEventTiming"
+    },
+    {
+      "source": "bcd",
+      "query": "api.PerformanceLongTaskTiming"
+    },
+    {
+      "source": "bcd",
+      "query": "api.PerformanceMark"
+    },
+    {
+      "source": "bcd",
+      "query": "api.PerformanceMeasure"
+    },
+    {
+      "source": "bcd",
+      "query": "api.PerformanceNavigation"
+    },
+    {
+      "source": "bcd",
+      "query": "api.PerformanceNavigationTiming"
+    },
+    {
+      "source": "bcd",
+      "query": "api.PerformanceObserver"
+    },
+    {
+      "source": "bcd",
+      "query": "api.PerformanceObserverEntryList"
+    },
+    {
+      "source": "bcd",
+      "query": "api.PerformancePaintTiming"
+    },
+    {
+      "source": "bcd",
+      "query": "api.PerformanceResourceTiming"
+    },
+    {
+      "source": "bcd",
+      "query": "api.PerformanceServerTiming"
+    },
+    {
+      "source": "bcd",
+      "query": "api.PerformanceTiming"
+    },
+    {
+      "source": "bcd",
+      "query": "api.TaskAttributionTiming"
+    },
+    {
+      "source": "bcd",
+      "query": "api.performance"
+    },
+    {
+      "source": "bcd",
+      "query": "api.Element.elementTiming"
+    },
+    {
+      "source": "bcd",
+      "query": "http.headers.Server-Timing"
+    },
+    {
+      "source": "bcd",
+      "query": "http.headers.Timing-Allow-Origin"
+    }
+  ]
+}
