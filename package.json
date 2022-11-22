@@ -17,6 +17,7 @@
   "homepage": "https://github.com/ddbeck/common-web-feature-mockup#readme",
   "devDependencies": {
     "ajv-cli": "^5.0.0",
-    "ajv-formats": "^2.1.1"
+    "ajv-formats": "^2.1.1",
+    "mocha": "^10.1.0"
   }
 }
