@@ -112,17 +112,13 @@
           "title": "GitHub user name",
           "type": "string",
           "pattern": "@[\\w-]+",
-          "examples": [
-            "@ddbeck"
-          ]
+          "examples": ["@ddbeck"]
         },
         {
           "title": "Automation",
           "type": "string",
           "pattern": "\\[[\\w-]+\\]",
-          "examples": [
-            "[some-bot]"
-          ]
+          "examples": ["[some-bot]"]
         }
       ]
     },
