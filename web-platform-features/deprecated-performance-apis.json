@@ -1,0 +1,28 @@
+{
+  "identifier": "deprecated-performance-apis",
+  "shortName": "Deprecated Performance APIs",
+  "longName": "Deprecated Web Performance Measurement APIs",
+  "description": "Deprecated Performance APIs that shouldn't be used anymore.",
+  "constituentFeatures": [
+    {
+      "source": "bcd",
+      "query": "api.PerformanceNavigation"
+    },
+    {
+      "source": "bcd",
+      "query": "api.PerformanceTiming"
+    },
+    {
+      "source": "bcd",
+      "query": "api.Performance.memory"
+    },
+    {
+      "source": "bcd",
+      "query": "api.Performance.navigation"
+    },
+    {
+      "source": "bcd",
+      "query": "api.Performance.timing"
+    }
+  ]
+}
