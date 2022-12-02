@@ -1,4 +1,5 @@
 import utils from "@ddbeck/bcd-utils";
+import fs from "node:fs";
 import path from "node:path";
 
 class Feature {
@@ -11,7 +12,7 @@ class Feature {
   _prepareDestination() {
     fs.mkdirSync(path.dirname(this.destination), { recursive: true });
     if (fs.existsSync(this.destination)) {
-      fs.unlink(this.destination);
+      fs.unlinkSync(this.destination);
     }
   }
 
