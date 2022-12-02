@@ -23,5 +23,9 @@
     "ajv-formats": "^2.1.1",
     "mocha": "^10.1.0",
     "prettier": "2.8.0"
+  },
+  "dependencies": {
+    "@ddbeck/bcd-utils": "github:ddbeck/bcd-utils",
+    "yargs": "^17.6.2"
   }
 }
