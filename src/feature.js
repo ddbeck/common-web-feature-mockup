@@ -1,46 +1,41 @@
 import utils from "@ddbeck/bcd-utils";
-import fs from "node:fs";
-import path from "node:path";
+import { FeatureOrGroup } from "./feature-or-group.js";
+import summaryBool from "./summaries/booleans.js";
+import summarySinceVersions from "./summaries/sinceVersions.js";
+import summarySinceDates from "./summaries/sinceDates.js";
 
-class Feature {
+class Feature extends FeatureOrGroup {
   constructor(source, query, destDir) {
+    super();
+    console.error(
+      `Initialized: Feature(<${query}>, ${JSON.stringify(destDir)})`
+    );
     this.source = source;
     this.query = query;
     this.destination = `${destDir}/${source}/${query}.json`;
-  }
-
-  _prepareDestination() {
-    fs.mkdirSync(path.dirname(this.destination), { recursive: true });
-    if (fs.existsSync(this.destination)) {
-      fs.unlinkSync(this.destination);
-    }
+    this.compatData = utils.query(this.query);
   }
 
   resolve() {
-    if (this.source === "bcd") {
-      this.data = utils.query(this.query);
-    }
     this.output = JSON.stringify(
       {
         source: this.source,
         query: this.query,
-        supportSummaries: "TODO",
+        supportSummaries: this.summarize(),
+        compatData: this.compatData,
       },
       undefined,
       2
     );
   }
 
-  write() {
-    if (this.output == undefined) {
-      throw Error("Unresolved data!");
-    }
-    this._prepareDestination();
-    fs.writeFileSync(this.destination, this.output, { encoding: "utf-8" });
-  }
-
   summarize() {
-    // TODO: do something with this.data
+    const summaries = {
+      boolean: summaryBool.feature(this),
+      sinceVersions: summarySinceVersions.feature(this),
+      sinceDates: summarySinceDates.feature(this),
+    };
+    return summaries;
   }
 }
 
