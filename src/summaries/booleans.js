@@ -6,7 +6,7 @@ function group(group, browsers = defaultBrowsers) {
 
   for (const browser of browsers) {
     summary[browser] = !group.features
-      .map((f) => f.summarize().boolean[browser])
+      .map((f) => f.summarize().booleans[browser])
       .includes(false);
   }
 
