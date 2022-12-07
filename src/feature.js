@@ -1,8 +1,6 @@
 import utils from "@ddbeck/bcd-utils";
 import { FeatureOrGroup } from "./feature-or-group.js";
-import summaryBool from "./summaries/booleans.js";
-import summarySinceVersions from "./summaries/sinceVersions.js";
-import summarySinceDates from "./summaries/sinceDates.js";
+import summaries from "./summaries/index.js";
 
 class Feature extends FeatureOrGroup {
   constructor(source, query, destDir) {
@@ -30,12 +28,13 @@ class Feature extends FeatureOrGroup {
   }
 
   summarize() {
-    const summaries = {
-      boolean: summaryBool.feature(this),
-      sinceVersions: summarySinceVersions.feature(this),
-      sinceDates: summarySinceDates.feature(this),
-    };
-    return summaries;
+    const s = {};
+
+    for (const [summaryName, summary] of Object.entries(summaries)) {
+      s[summaryName] = summary.feature(this);
+    }
+
+    return s;
   }
 }
 

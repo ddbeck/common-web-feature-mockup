@@ -1,8 +1,6 @@
 import { Feature } from "./feature.js";
 import { FeatureOrGroup } from "./feature-or-group.js";
-import summaryBooleans from "./summaries/booleans.js";
-import summarySinceVersions from "./summaries/sinceVersions.js";
-import summarySinceDates from "./summaries/sinceDates.js";
+import summaries from "./summaries/index.js";
 
 class Group extends FeatureOrGroup {
   constructor(definition, destinationDirectory) {
@@ -39,12 +37,13 @@ class Group extends FeatureOrGroup {
   }
 
   summarize() {
-    const summaries = {
-      booleans: summaryBooleans.group(this),
-      sinceVersions: summarySinceVersions.group(this),
-      sinceDates: summarySinceDates.group(this),
-    };
-    return summaries;
+    const s = {};
+
+    for (const [summaryName, summary] of Object.entries(summaries)) {
+      s[summaryName] = summary.group(this);
+    }
+
+    return s;
   }
 }
 
