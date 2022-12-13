@@ -1,0 +1,41 @@
+{
+  "identifier": "custom-elements",
+  "shortName": "Custom Elements",
+  "longName": "Custom Elements",
+  "description": "Create and use new DOM elements",
+  "constituentFeatures": [
+    {
+      "source": "bcd",
+      "query": "api.CustomElementRegistry"
+    },
+    {
+      "source": "bcd",
+      "query": "api.CustomElementRegistry.builtin_element_support"
+    },
+    {
+      "source": "bcd",
+      "query": "api.CustomElementRegistry.define",
+      "$comment": "I need a subject-matter expert to tell me whether CustomElementRegistry.{get,upgrade,whenDefined} are necessary to custom elements or not"
+    },
+    {
+      "source": "bcd",
+      "query": "api.Window.customElements"
+    },
+    {
+      "source": "bcd",
+      "query": "css.selectors.defined"
+    },
+    {
+      "source": "bcd",
+      "query": "css.selectors.host"
+    },
+    {
+      "source": "bcd",
+      "query": "css.selectors.host-context"
+    },
+    {
+      "source": "bcd",
+      "query": "css.selectors.part"
+    }
+  ]
+}
