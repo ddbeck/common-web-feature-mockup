@@ -1,4 +1,4 @@
-import { minimumVersion } from "../versionUtils.js";
+import { maximumVersion } from "../versionUtils.js";
 import { earliestContinuouslySupportedVersion } from "../supportUtils.js";
 import { defaultBrowsers } from "../defaults.js";
 
@@ -12,7 +12,7 @@ function group(group, browsers = defaultBrowsers) {
 
     summary[browser] = versions.includes(false)
       ? false
-      : minimumVersion(versions, browser);
+      : maximumVersion(versions, browser);
   }
 
   return summary;

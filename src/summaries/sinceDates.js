@@ -15,7 +15,7 @@ function group(group, browsers = defaultBrowsers) {
     } else {
       // This is not the nicest way to do it but it works for now
       // TODO: Use actual date comparisons?
-      summary[browser] = dates.sort().shift();
+      summary[browser] = dates.sort().pop();
     }
   }
 

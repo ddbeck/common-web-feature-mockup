@@ -7,25 +7,27 @@ class NoSuchVersionError extends Error {
   }
 }
 
-function minimumVersion(versions, browser) {
+function versionCompareFunction(a, b, browser) {
   const releases = [...iterReleases(query(`browsers.${browser}`).releases)];
-  let index = Infinity;
+  const aIndex = releases.findIndex((release) => release.version === a);
+  const bIndex = releases.findIndex((release) => release.version === b);
+  return aIndex - bIndex;
+}
 
-  for (const version of versions) {
-    const idx = releases.findIndex((release) => release.version === version);
+function versionsByReleaseOrder(versions, browser) {
+  return [...versions].sort((a, b) => versionCompareFunction(a, b, browser));
+}
 
-    if (idx === -1) {
-      throw new NoSuchVersionError(`${browser} version ${version} not found!`);
-    }
+function minimumVersion(versions, browser) {
+  return versionsByReleaseOrder(versions, browser).shift();
+}
 
-    index = idx < index ? idx : index;
-  }
-
-  return releases[index].version;
+function maximumVersion(versions, browser) {
+  return versionsByReleaseOrder(versions, browser).pop();
 }
 
 function versionToDate(version, browser) {
   return query(`browsers.${browser}`).releases[version].release_date;
 }
 
-export { minimumVersion, NoSuchVersionError, versionToDate };
+export { maximumVersion, minimumVersion, NoSuchVersionError, versionToDate };
