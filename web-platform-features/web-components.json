@@ -1,0 +1,32 @@
+{
+  "identifier": "web-components",
+  "shortName": "Web Components",
+  "longName": "Web Components",
+  "description": "Reusable custom elements",
+  "constituentFeatures": [
+    {
+      "source": "ddbeck/common-web-feature-mockup",
+      "query": "custom-elements"
+    },
+    {
+      "source": "ddbeck/common-web-feature-mockup",
+      "query": "shadow-dom"
+    },
+    {
+      "source": "bcd",
+      "query": "api.HTMLTemplateElement"
+    },
+    {
+      "source": "bcd",
+      "query": "api.HTMLSlotElement"
+    },
+    {
+      "source": "bcd",
+      "query": "html.elements.slot"
+    },
+    {
+      "source": "bcd",
+      "query": "html.elements.template"
+    }
+  ]
+}
