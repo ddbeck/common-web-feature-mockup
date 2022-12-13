@@ -1,0 +1,56 @@
+{
+  "identifier": "shadow-dom",
+  "shortName": "Shadow DOM",
+  "longName": "Shadow Document Object Model",
+  "description": "Multiple DOM trees in a single document",
+  "constituentFeatures": [
+    {
+      "source": "bcd",
+      "query": "api.Element.attachShadow"
+    },
+    {
+      "source": "bcd",
+      "query": "api.Element.shadowRoot"
+    },
+    {
+      "source": "bcd",
+      "query": "api.Event.composed"
+    },
+    {
+      "source": "bcd",
+      "query": "api.Event.composedPath"
+    },
+    {
+      "source": "bcd",
+      "query": "api.Node.getRootNode"
+    },
+    {
+      "source": "bcd",
+      "query": "api.Node.isConnected"
+    },
+    {
+      "source": "bcd",
+      "query": "api.ShadowRoot"
+    },
+    {
+      "source": "bcd",
+      "query": "api.ShadowRoot.host"
+    },
+    {
+      "source": "bcd",
+      "query": "api.ShadowRoot.mode"
+    },
+    {
+      "source": "bcd",
+      "query": "api.HTMLSlotElement"
+    },
+    {
+      "source": "bcd",
+      "query": "api.HTMLSlotElement.slotchange_event"
+    },
+    {
+      "source": "bcd",
+      "query": "html.elements.slot"
+    }
+  ]
+}
