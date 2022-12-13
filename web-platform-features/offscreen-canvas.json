@@ -1,0 +1,268 @@
+{
+  "identifier": "offscreen-canvas",
+  "shortName": "Offscreen Canvas",
+  "longName": "Offscreen Canvas (all features)",
+  "description": "Canvas rendering decoupled from the DOM",
+  "constituentFeatures": [
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvas"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvas.OffscreenCanvas"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvas.height"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvas.width"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvas.getContext"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvas.transferToImageBitmap"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvas.convertToBlob"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvas.contextlost_event"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvas.contextrestored_event"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D"
+    },
+    { "source": "bcd", "query": "api.OffscreenCanvasRenderingContext2D.arc" },
+    { "source": "bcd", "query": "api.OffscreenCanvasRenderingContext2D.arcTo" },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.beginPath"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.bezierCurveTo"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.canvas"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.clearRect"
+    },
+    { "source": "bcd", "query": "api.OffscreenCanvasRenderingContext2D.clip" },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.closePath"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.commit"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.createImageData"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.createLinearGradient"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.createPattern"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.createRadialGradient"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.direction"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.drawImage"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.ellipse"
+    },
+    { "source": "bcd", "query": "api.OffscreenCanvasRenderingContext2D.fill" },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.fillRect"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.fillStyle"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.fillText"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.filter"
+    },
+    { "source": "bcd", "query": "api.OffscreenCanvasRenderingContext2D.font" },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.getImageData"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.getLineDash"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.getTransform"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.globalAlpha"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.globalCompositeOperation"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.imageSmoothingEnabled"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.isPointInPath"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.isPointInStroke"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.lineCap"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.lineDashOffset"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.lineJoin"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.lineTo"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.lineWidth"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.measureText"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.miterLimit"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.moveTo"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.putImageData"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.quadraticCurveTo"
+    },
+    { "source": "bcd", "query": "api.OffscreenCanvasRenderingContext2D.rect" },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.resetTransform"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.restore"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.rotate"
+    },
+    { "source": "bcd", "query": "api.OffscreenCanvasRenderingContext2D.save" },
+    { "source": "bcd", "query": "api.OffscreenCanvasRenderingContext2D.scale" },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.setLineDash"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.setTransform"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.shadowBlur"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.shadowColor"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.shadowOffsetX"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.shadowOffsetY"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.stroke"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.strokeRect"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.strokeStyle"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.strokeText"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.textAlign"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.textBaseline"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.transform"
+    },
+    {
+      "source": "bcd",
+      "query": "api.OffscreenCanvasRenderingContext2D.translate"
+    },
+    {
+      "source": "bcd",
+      "query": "api.HTMLCanvasElement.transferControlToOffscreen"
+    }
+  ]
+}
