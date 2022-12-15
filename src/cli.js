@@ -15,10 +15,7 @@ main();
 function main() {
   console.log(argv);
 
-  const definition = JSON.parse(
-    fs.readFileSync(argv.definition, { encoding: "utf-8" })
-  );
-  const group = new Group(definition, argv.destination);
+  const group = new Group(argv.definition, argv.destination);
   group.resolve();
   group.summarize();
 

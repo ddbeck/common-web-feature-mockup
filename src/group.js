@@ -1,10 +1,16 @@
 import { Feature } from "./feature.js";
 import { FeatureOrGroup } from "./feature-or-group.js";
 import summaries from "./summaries/index.js";
+import fs from "node:fs";
+import path from "node:path";
 
 class Group extends FeatureOrGroup {
-  constructor(definition, destinationDirectory) {
+  constructor(filePath, destinationDirectory) {
     super();
+    this.filePath = filePath;
+    const definition = JSON.parse(
+      fs.readFileSync(filePath, { encoding: "utf-8" })
+    );
     console.error(
       `Initialized: Group(<${definition.identifier}>, ${JSON.stringify(
         destinationDirectory
@@ -12,10 +18,22 @@ class Group extends FeatureOrGroup {
     );
     this.source = "@ddbeck/common-web-feature-mockup";
     this.definition = definition;
-    this.destination = `${destinationDirectory}/${definition.identifier}.json`;
-    this.features = this.definition.constituentFeatures.map(
-      (cf) => new Feature(cf.source, cf.query, destinationDirectory)
+    this.destination = path.join(
+      destinationDirectory,
+      `${definition.identifier}.json`
     );
+    this.features = this.definition.constituentFeatures.map((cf) => {
+      console.log(cf);
+      if (cf.source === "ddbeck/common-web-feature-mockup") {
+        const group = path.join(
+          path.dirname(this.filePath),
+          `${cf.query}.json`
+        );
+        console.log(group);
+        return new Group(group, destinationDirectory);
+      }
+      return new Feature(cf.source, cf.query, destinationDirectory);
+    });
     this.query = this.definition.identifier;
   }
 
