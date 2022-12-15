@@ -6,7 +6,7 @@
   "constituentFeatures": [
     {
       "source": "bcd",
-      "query": "javascript.bultins.Array.at"
+      "query": "javascript.builtins.Array.at"
     }
   ]
 }
