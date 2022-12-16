@@ -1,12 +1,5 @@
 import { iterReleases, query } from "@ddbeck/bcd-utils";
 
-class NoSuchVersionError extends Error {
-  constructor(message) {
-    super(message);
-    this.name = "NoSuchVersionError";
-  }
-}
-
 function versionCompareFunction(a, b, browser) {
   const releases = [...iterReleases(query(`browsers.${browser}`).releases)];
   const aIndex = releases.findIndex((release) => release.version === a);
@@ -30,4 +23,4 @@ function versionToDate(version, browser) {
   return query(`browsers.${browser}`).releases[version].release_date;
 }
 
-export { maximumVersion, minimumVersion, NoSuchVersionError, versionToDate };
+export { maximumVersion, minimumVersion, versionToDate };
