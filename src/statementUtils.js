@@ -12,4 +12,8 @@ function wasRemoved(statement) {
   return ![undefined, false, null].includes(statement.version_removed);
 }
 
-export { isOpen, wasAdded, wasRemoved };
+function hasFlags(statement) {
+  return 0 < statement.flags?.length;
+}
+
+export { isOpen, wasAdded, wasRemoved, hasFlags };

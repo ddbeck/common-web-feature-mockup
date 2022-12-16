@@ -1,6 +1,11 @@
 import { strict as assert } from "node:assert";
 
-import { isOpen, wasAdded, wasRemoved } from "../src/statementUtils.js";
+import {
+  hasFlags,
+  isOpen,
+  wasAdded,
+  wasRemoved,
+} from "../src/statementUtils.js";
 
 describe("wasAdded()", function () {
   it("return true for added with version number", function () {
@@ -39,6 +44,29 @@ describe("wasRemoved()", function () {
 
   it("return false removal undefined", function () {
     assert.ok(!wasRemoved({ version_added: "100" }));
+  });
+});
+
+describe("hasFlags()", function () {
+  const flaggedStatement = {
+    version_added: "123",
+    flags: [
+      {
+        type: "preference",
+        name: "some.preference.in.firefox",
+        value_to_set: "true",
+      },
+    ],
+  };
+
+  const unflaggedStatement = { version_added: "123" };
+
+  it("returns true for flags", function () {
+    assert.ok(hasFlags(flaggedStatement));
+  });
+
+  it("return false for no flags", function () {
+    assert.ok(!hasFlags(unflaggedStatement));
   });
 });
 
