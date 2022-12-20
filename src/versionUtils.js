@@ -1,5 +1,13 @@
 import { iterReleases, query } from "@ddbeck/bcd-utils";
 
+function isPreRelease(version, browser) {
+  const release = query(`browsers.${browser}`).releases[version];
+  return (
+    version === "preview" ||
+    ["beta", "nightly", "planned"].includes(release.status)
+  );
+}
+
 function versionCompareFunction(a, b, browser) {
   const releases = [...iterReleases(query(`browsers.${browser}`).releases)];
   const aIndex = releases.findIndex((release) => release.version === a);
@@ -23,4 +31,4 @@ function versionToDate(version, browser) {
   return query(`browsers.${browser}`).releases[version].release_date;
 }
 
-export { maximumVersion, minimumVersion, versionToDate };
+export { isPreRelease, maximumVersion, minimumVersion, versionToDate };
