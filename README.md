@@ -1,3 +1,10 @@
+
+**Attention!** This project repository has been succeeded by [web-platform-dx/web-features](https://github.com/web-platform-dx/web-features). Go there instead!
+
+<details>
+
+<summary>View the old README contents</summary>
+
 # Common web platform feature representation mockup (WIP)
 
 This is a mock up of a way of defining web platform features based on support in different browsers. It has lots of missing pieces, including tools, an output format, and much more besides. This is meant to illustrate some ideas in a Google Doc; don't rely on it for anything at this point.
@@ -19,3 +26,5 @@ To learn more about this project, examine two key areas:
 - Read `query-results/bcd/javascript.builtins.Array*.json` to see how we might query and summarize data found in external data sources, such as [mdn/browser-compat-data](https://github.com/mdn/browser-compat-data).
 
 - Read `query-results/array*.json` to learn how we might combine data from multiple queries together, in the group output.
+
+</details>
